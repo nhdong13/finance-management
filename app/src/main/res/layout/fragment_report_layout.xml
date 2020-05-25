@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.baonq.ui.ReportFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/calendar_active_month_bg"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight=".40"
+          android:orientation="horizontal">
+
+         <LinearLayout
+             android:id="@+id/containIncomePieChart"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight=".50"
+             android:background="@drawable/border_layout_right"
+             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"
+                android:text="Thu nhập"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/txtIncomeBalance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"
+                android:text="0.00đ"
+                android:textColor="@color/colorGreen"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/inComePieChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:background="@drawable/border_layout_bottom"
+                android:layout_weight=".50">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/containExpandPieChart"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight=".50"
+             android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"
+                android:text="Chi tiêu"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/txtExpandBalance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"
+                android:text="0.00đ"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/expandPieChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:background="@drawable/border_layout_bottom"
+                android:layout_weight=".50">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight=".30"
+          android:orientation="vertical">
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.baonq.ui.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_gravity="top|center|start"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:foregroundGravity="top"
+        android:src="@drawable/ic_add_black_24dp"
+        android:translationZ="1dp"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:elevation="24dp"
+        app:fabSize="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:animateLayoutChanges="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="#757575"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/bottom_navigation_item">
+
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

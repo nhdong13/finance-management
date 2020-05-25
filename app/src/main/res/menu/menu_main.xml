@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnViewNotification"
+        app:actionLayout="@layout/menu_main_sub_item_layout"
+        android:title="Thông báo"
+        app:showAsAction="always"/>
+    <item android:title="Quay về ngày hôm nay"
+        android:id="@+id/btnReturnToday"
+        android:visible="false"/>
+    <item android:title="Chuyển tiền đến ví khác"
+        android:id="@+id/btnTransfer"
+        android:visible="false"/>
+    <item android:title="Điều chỉnh số dư"
+        android:id="@+id/btnAdjustedOverbalance"
+        android:visible="false"/>
+    <item android:title="Đồng bộ"
+        android:id="@+id/btnSynchonize"/>
+</menu>

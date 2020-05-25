@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    tools:context="project.baonq.ui.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/avtArea"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorGreen">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_user" />
+
+                <TextView
+                    android:id="@+id/txtSettingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="User name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+
+            <TableLayout
+                android:id="@+id/settingGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avtArea"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorWhite">
+
+                <!--<TableRow-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:src="@mipmap/ic_usr" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/avatar"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Tài khoản của tôi"-->
+                        <!--android:textAlignment="textStart"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:textSize="25dp"-->
+                        <!--tools:ignore="RtlCompat" />-->
+                <!--</TableRow>-->
+
+                <!--<TableRow-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:src="@mipmap/ic_group" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/avatar"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Nhóm"-->
+                        <!--android:textAlignment="textStart"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:textSize="25dp"-->
+                        <!--tools:ignore="RtlCompat" />-->
+                <!--</TableRow>-->
+
+                <!--<TableRow-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:src="@mipmap/ic_so_no" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/avatar"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Sổ nợ"-->
+                        <!--android:textAlignment="textStart"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:textSize="25dp"-->
+                        <!--tools:ignore="RtlCompat" />-->
+                <!--</TableRow>-->
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/settingGroup1">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:text="Đăng xuất"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

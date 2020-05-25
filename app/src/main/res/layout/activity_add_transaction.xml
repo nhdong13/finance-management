@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="horizontal"
+    tools:context="project.baonq.AddTransaction.AddTransaction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Số tiền:"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nmAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:ems="6"
+                android:inputType="numberDecimal"
+                android:textSize="35dp" />
+
+            <Button
+                android:id="@+id/btnCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:text="VND" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Ví:"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:onClick="clickToChooseWallet"
+            android:textSize="18dp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Nhóm:"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:onClick="clickToChooseCatogory"
+            android:textSize="18dp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Ngày:"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="select date"
+            android:inputType="date"
+            android:onClick="clickToPickDate"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Ghi chú:"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:hint="Note"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnDeleteTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@android:color/holo_red_light"
+            android:onClick="clickToDeleteTransaction"
+            android:visibility="invisible"
+            android:textSize="18dp"
+            android:text="Delete"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>
